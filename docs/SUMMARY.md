@@ -1,5 +1,5 @@
-* [DreamBox](README.md)
-* [接入与调试](use/README.md)
+* [开始](use/README.md)
+* 接入与调试
   * [环境准备](use/environment.md)
   * CLI
     * [使用说明](use/cli/README.md)
