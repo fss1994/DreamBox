@@ -26,7 +26,8 @@ jobs:
       - name: Gitbook Action
         uses: ZanderZhao/gitbook-action@v1.2.4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: master
           source_dir: docs
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
           
