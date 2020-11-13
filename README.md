@@ -1,7 +1,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## 简介
-<img src="docs/assets/ic_dreambox.jpg" width="150">
+<img src="https://didi.github.io/DreamBox/assets/ic_dreambox.jpg" width="150">
 <br>
 这是一个为客户端打造的、具有动态化功能、性能优秀的统一视图开发框架——`One DSL, Both run`
 
@@ -46,7 +46,7 @@
 ## 功能特性
 > 先通过一个Gif简单认识下
 
-![demo gif](docs/assets/db-demo.gif)
+![demo gif](https://didi.github.io/DreamBox/assets/db-demo.gif)
 
 `DreamBox`将一个视图中的各种元素分为三类：
 1. 视图元素，这类元素就是直接展示在用户眼前的View。这类元素可以动态化改变其内部属性和外部布局
@@ -106,7 +106,7 @@
 
 > QQ群
 
-<img src="docs/assets/db_qq_qrcode.png" width="220">
+<img src="https://didi.github.io/DreamBox/assets/db_qq_qrcode.png" width="220">
 
 ## License
 
