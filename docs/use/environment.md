@@ -49,13 +49,14 @@ pod 'DreamBox_iOS', :git => 'https://github.com/didi/DreamBox/core-ios'
 - 或其他支持XSD校验的IDE
 
 开发步骤：
-1. 创建一个新文件，扩展名为`xml`
+1. 创建一个`xml`文件
 2. 键入内容
    ```xml
-   //TODO dbl待确定网址？
-   <dbl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <dbl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://db-xsd.oss-cn-beijing.aliyuncs.com/dbl.xsd">
    </dbl>
    ```
+   暂时通过XSD达成自动补全效果，DB的各种DSL在快速迭代开发中，XSD多有更新不及时的情况
+   
 3. 验证自动补全效果
    ![completion](../assets/dbl_completion.png)
 4. 具体DSL书写内容参考[DSL开发手册](../dsl/changelog.md)

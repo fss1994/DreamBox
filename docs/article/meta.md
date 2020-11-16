@@ -112,7 +112,7 @@ By方绍晟、李泽琛
 }
 ````
 
-一般来说，我们通过网络请求（ [动作节点`<net>`](TODO github page) ），或自定义事件（ [事件管道`<sendEvent>`、`<onEvent>`](TODO github page) ）等方式与外界交互，最终会获取一些数据，这些新数据便可以存放在 `meta` 数据池中，供 DreamBox 使用。
+一般来说，我们通过网络请求（ [动作节点`<net>`](../dsl/func/net.md) ），或自定义事件（ [事件管道`<sendEvent>`、`<onEvent>`](../extension/event/event_pipe.md) ）等方式与外界交互，最终会获取一些数据，这些新数据便可以存放在 `meta` 数据池中，供 DreamBox 使用。
 
 ```` xml
 <net url="xxx" to="net_result" >
@@ -125,7 +125,7 @@ By方绍晟、李泽琛
 </net>
 ````
 
-而在db内可以直接通过动作节点来更改 meta 中的数据（ [动作节点`<changeMeta>`](TODO github page) ）。
+而在db内可以直接通过动作节点来更改 meta 中的数据（ [动作节点`<changeMeta>`](../dsl/func/changeMeta.md) ）。
 
 ```` xml
 <dbl>
@@ -143,7 +143,7 @@ By方绍晟、李泽琛
 
 ````
 
-通过数据的变化，结合 [`changeOn `](TODO github page) 方式，便可以做到页面的刷新，更新ui展示。
+通过数据的变化，结合 [`changeOn`](../dsl/root.md) 方式，便可以做到页面的刷新，更新ui展示。
 
 
 ### 2.全局数据池pool
@@ -200,4 +200,4 @@ public void render(String accessKey, String templateId, String extJsonStr){}
 增加保留字段这个概念不是 DreamBox 中包含的，而是在接入时可以采用的最佳实践。在顺风车业务使用时，我们使用了名称为 `dbd` 的字段作为保留字段，在平时的版本开发中，并不需要使用 `dbd` 字段，只要保证在传入的 `ext` 数据中可以存在 `dbd` 字段的扩展，而一旦有需求需要兼容旧版本，便可以使用 `dbd` 字段，然后更新对应的 `db模板`，以此响应需求。
 
 ### 其他
-[DreamBox开发手册](TODO github page)
+[DreamBox开发手册](../use/README.md)

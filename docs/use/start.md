@@ -13,8 +13,7 @@
 ### 编辑模板
 
 ```xml
-//TODO dbl待确定网址
-<dbl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="=/dreambox/dbl">
+<dbl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://db-xsd.oss-cn-beijing.aliyuncs.com/dbl.xsd">
     <render>
         <text src="Hello DreamBox!"></text>
     </render>

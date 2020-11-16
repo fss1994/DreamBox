@@ -4,7 +4,7 @@
 
 ### 1.1 概念
 
-考虑一个问题，开发者在使用`DreamBox`时，有些逻辑的处理需要在native环境里实现，处理完的结果需要再传递给`DreamBox`。此时在`DreamBox`和`native`之间需要一个机制来实现这种通讯能力，这个机制在DreamBox里就是 [事件管道](TODO github page)。
+考虑一个问题，开发者在使用`DreamBox`时，有些逻辑的处理需要在native环境里实现，处理完的结果需要再传递给`DreamBox`。此时在`DreamBox`和`native`之间需要一个机制来实现这种通讯能力，这个机制在DreamBox里就是 [事件管道](../extension/event/event_pipe.md)。
 
 目前常用的跨端实现方案H5、weex、RN都提供了可以和native双向通信的能力。
 
@@ -25,7 +25,7 @@
 - [Android 工程代码](https://static.didialift.com/pinche/gift/resource/75ct43r4o28-1600680539525-DBEventDemo.zip)
 - [IOS 工程代码](https://static.didialift.com/pinche/gift/resource/gs6ioeb4li8-1600686674484-dreambox_ios.zip)
 
-为了便于后面内容的理解，强烈建议把工程<font color='red'>run起来...run起来...run起来...</font> 简单起见，示例的DreamBox模板会采用本地方式加载，本地加载方式的使用方式可参考DreamBox gitbook的 [快速入门](TODO github page)
+为了便于后面内容的理解，强烈建议把工程<font color='red'>run起来...run起来...run起来...</font> 简单起见，示例的DreamBox模板会采用本地方式加载，本地加载方式的使用方式可参考DreamBox gitbook的 [快速入门](../use/start.md)
 
 ### 2.2 Native向DreamBox发送事件
 
@@ -83,7 +83,7 @@
 - 如果事件携带了数据过来，会将数据放入meta数据池的`msgTo`指定的节点下。本例为放到`eventData`节点下
 - 执行`toast` action，toast `src` 使用的数据源为事件携带过来的数据。数据取用方式为`${eventData.xxx}`
 
-数据相关概念参考 [meta节点](TODO github page) 以及 工作原理 [数据](TODO github page) 一节
+数据相关概念参考 [meta节点](../dsl/meta.md) 以及 工作原理 [数据](../design/data.md) 一节
 
 #### 2.2.3 文案刷新
 
@@ -360,7 +360,3 @@ native在收到事件并处理后执行了回调，DreamBox执行如下处理
 - text 的 `src`属性指定为`eventData.testDataCallback`，即text的文案默认为`[[D TO N] 计数 callback`
 - text 的 `changeOn`属性指定为`eventData`，即`eventData`发生改变时会刷新text显示文案
 - callback时携带的数据更新了`eventData`，所以会刷新文案
-
-## 3. 其他
-
-- [DreamBox event](TODO github page) 文档里的[实践建议]部分，需要重点理解一下

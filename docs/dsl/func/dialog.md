@@ -1,11 +1,10 @@
 ## `<dialog>`
 
-### 兼容性
-from DSLv1.0
+Added in v0.1
 
 ### 设计
 
-代表一次弹窗动作
+代表一次弹窗动作，在Android和iOS平台上展现的样式会有所区别，以实际为准。
 
 ![dialog视图样式](../../assets/dialog.png)
 

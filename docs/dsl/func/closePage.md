@@ -1,7 +1,6 @@
 ## `<closePage>`
 
-### 兼容性
-from DSLv1.0
+Added in v0.2
 
 ### 设计
 

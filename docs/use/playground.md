@@ -15,31 +15,10 @@ pod install
 
 
 #### Android ：
-PlayGroundV1.0 （支持DSLv1.0）
-
-
-扫码下载：
-
-<img src="../assets/playfround_android_apk.png" width="30%">
-
-
-运行结果
-
-<img src="../assets/playground_android_demo.png" width="30%">
-
----------------------------------------------------------------
-
-PlayGroundV2.0（支持DSLv2.0）
-
-````
-apk下载地址：
-https://pt-starfile.didistatic.com/static/starfile/node20200820/895f1e95e30aba5dd56d6f2ccf768b57/NN0Fxv9j5y1597903555460.apk
-````
 
 扫码下载：
 
 <img src="../assets/playgroundv2.png" width="30%">
-
 
 
 ### 二、使用

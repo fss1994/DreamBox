@@ -1,7 +1,6 @@
 ## `<nav>`
 
-### 兼容性
-from DSLv1.0
+Added in v0.1
 
 ### 设计
 

@@ -1,7 +1,6 @@
 ## `<flow>`
 
-### 兼容性
-from DSLv2.0
+Added in v0.2
 
 ### 设计
 
@@ -23,5 +22,17 @@ from DSLv2.0
 ```
 <flow src="${list_response.items}">
 	<text src="${item_title}" />
+</flow>
+```
+
+#### Added in v0.3
+
+子节点需要通过`<cell>`节点进行包裹。即：
+```xml
+<flow>
+	<cell>
+		<text />
+		<text />
+	</cell>
 </flow>
 ```

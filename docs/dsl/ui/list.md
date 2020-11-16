@@ -1,7 +1,6 @@
 ## `<list>`
 
-### 兼容性
-from DSLv2.0
+Added in v0.2
 
 ### 设计
 
@@ -9,14 +8,9 @@ from DSLv2.0
 
 ### 属性
 
-#### DSLv2.0
+#### Added in v0.2
 - `src` 必需。用于代表列表的数据源，内容必须是json（dict结构）中类型为数组的节点，以方便列表的cell元素使用，可被`srcMock`覆盖
-- `oritation` 表示列表布局方向，vertical: 垂直布局、horizontal: 水平布局
-
-#### DSLv3.0
-- `pullRefresh` 是否支持下拉刷新，值为布尔值
-- `loadMore` 是否支持底部加载更多，值为布尔值
-- `pageIndex` 表示当前页面的索引值，配合`loadMore`使用，值为字符串，指向`meta`中的某个变量，此变量只能存储整型数据，在加载更多执行后此值会被SDK执行+1操作
+- `oritation` 表示列表布局方向，vertical: 垂直布局（默认）、horizontal: 水平布局
 
 ### 交互响应
 
@@ -24,11 +18,12 @@ from DSLv2.0
 
 ### 子节点
 
-#### DSLv2.0
+#### Added in v0.2
 可包含3种类型的子节点
 1. `<header>`（可选）用于形容列表头部区域
 2. `<footer>`（可选）用于形容列表尾部区域
 3. `<vh>`（必需）用于形容列表cell视图
+
 
 - `<header>`
 	- `<header>` 可以理解为一个视图容器，内部可包括其他的视图节点作为子节点。额外需要声明的有：
@@ -43,7 +38,7 @@ from DSLv2.0
 
 用法举例：
 ```
-<list ${list_response.items}>
+<list src=${list_response.items}>
 	<header>
 		<text src="im a header"/>
 	</header>

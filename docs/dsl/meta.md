@@ -1,7 +1,6 @@
 ## 元数据节点 `<meta>`
 
-### 兼容性
-from DSLv1.0
+Added in v0.1
 
 ### 设计
 

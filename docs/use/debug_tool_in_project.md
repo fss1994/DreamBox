@@ -1,10 +1,8 @@
 ## 集成调试工具
 
-### 一、接入
+### Android ：
 
-#### Android ：
-
-###### 工程中引入依赖 （建议debug模式下使用）：
+#### 工程中引入依赖 （建议debug模式下使用）：
 
 ```
     debugImplementation 'com.didiglobal.dreambox:db-debug-tool:1.0.0'
@@ -14,9 +12,9 @@
 
 <img src="../assets/db_debug_tool.png" width="30%">
 
-#### iOS ：
+### iOS ：
 
-###### 工程中引入依赖 （建议debug模式下使用）：
+#### 工程中引入依赖 （建议debug模式下使用）：
 
 ```
 pod 'DBDebugTool', :git => 'git@github.com:didi/dreambox.git'

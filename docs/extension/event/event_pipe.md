@@ -1,8 +1,6 @@
 ## 事件管道
 
-### 兼容性
-
-from 2.0
+Added in v0.2
 
 ### DSL设计
 
@@ -26,4 +24,4 @@ from 2.0
 </onEvent>
 ```
 
-详细用法参考 [android](./event_android.md) 和 [IOS](./event_ios.md) 的详细说明文档
+详细用法参考 [Android](./event_android.md) 和 [iOS](./event_ios.md) 的详细说明文档
