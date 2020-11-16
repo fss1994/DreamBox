@@ -1,6 +1,6 @@
 * [介绍](use/README.md)
 * 开发手册
-  * [更新日志](changelog.md)
+  * [更新日志](CHANGELOG.md)
   * [环境准备](use/environment.md)
   * [编译器的使用](use/cli/README.md)
   * [快速入门](use/start.md)

@@ -40,6 +40,9 @@ DreamBox的渲染设计思想参照Android约束布局，内部子节点采用�
 - `height` 同`width`
 - `visibleOn` 属性值接受元数据中的bool值，若给定key的数据变为true则展示（所有视图默认为可见）
 
+##### Added in v0.3
+- `userInteractionEnabled`是否允许用户交互，默认为false
+
 ##### 布局约束属性
 
 - `leftToLeft` 值为其他视图节点的ID，说明当前视图的左边以指定ID的左边为准
