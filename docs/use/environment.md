@@ -76,3 +76,5 @@ DreamBox CLI Version: 2.2.1 , for RUNTIME: 0.1
 ```
 pip3 install --upgrade dmb-cli
 ```
+
+> 更多关于CLI的使用说明参见[命令行工具使用说明](cli/README.md)
